@@ -3168,3 +3168,55 @@ footer .top {
   position: relative;
   z-index: 2;
 }
+
+
+/* تحسين عرض صورة الخلفية على الجوال */
+@media (max-width: 768px) {
+  .hero-background {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh;
+  }
+
+  /* إزالة تكرار الصورة */
+  .profile-image {
+    display: none; /* إخفاء الصورة المتكررة */
+  }
+
+  /* تحسين زر القائمة */
+  .menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  /* إصلاح مشاكل الأزرار */
+  .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  /* ضبط مسافات العناصر */
+  .hero-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* تحسين ترتيب الأزرار */
+  .language-switcher {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+  }
+
+  /* تحسين الهوامش لعناصر الصفحة */
+  .section {
+    padding: 40px 20px;
+  }
+
+  /* ضبط حجم الشعار ليكون متناسقًا */
+  .logo img {
+    max-width: 120px;
+  }
+}
